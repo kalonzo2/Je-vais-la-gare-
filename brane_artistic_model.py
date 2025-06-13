@@ -4,9 +4,9 @@ import trimesh
 # CREATE BOX
 def create_box():
     vertices = np.array([
-        [0, 0, (500000 / 7)],
-        [-(500000 / 7), 500000, 0],
-        [(500000 / 7), -(500000 / 7), -(500000 / 7)]
+        [0, 0, (50 / 7)],
+        [-(50 / 7), 50, 0],
+        [(50 / 7), -(50 / 7), -(50 / 7)]
     ])
     faces = np.array([[0, 1, 2]])
     return trimesh.Trimesh(vertices=vertices, faces=faces, process=False)
@@ -42,4 +42,4 @@ def export_scene(n, filename):
 
 # EXECUTE
 if __name__ == "__main__":
-    export_scene(5000000, 'triangular_structure.glb')
+    export_scene(10000, 'triangular_structure.glb')
