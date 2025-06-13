@@ -8,9 +8,16 @@ def create_box():
         [-7, 50, 7],
         [7, -7, -7],
         [10, 0, 0],
-        [
+        [70, 10, -7],
+        50, 70, 7],
         ])
-    faces = np.array([[0, 1, 2]])
+    faces = np.array([
+        [0, 1, 2],
+        [3, 4, 5],
+        [0, 3, 1, 5],
+        [2, 5, 3, 4],
+        [0, 3, 4, 3],
+        ])
     return trimesh.Trimesh(vertices=vertices, faces=faces, process=False)
 
 # CALCULATE POSITIONS
