@@ -51,4 +51,4 @@ def export_scene(n, filename):
 
 # EXECUTE
 if __name__ == "__main__":
-    export_scene(10000, 'triangular_structure.glb')
+    export_scene(20000, 'triangular_structure.glb')
