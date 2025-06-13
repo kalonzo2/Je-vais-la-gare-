@@ -4,10 +4,12 @@ import trimesh
 # CREATE BOX
 def create_box():
     vertices = np.array([
-        [0, 0, 7],
-        [-7, 50, 3.5],
-        [7, -7, 0]])
-    ])
+        [0, 0, 0],
+        [-7, 50, 7],
+        [7, -7, -7],
+        [10, 0, 0],
+        [
+        ])
     faces = np.array([[0, 1, 2]])
     return trimesh.Trimesh(vertices=vertices, faces=faces, process=False)
 
