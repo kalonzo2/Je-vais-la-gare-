@@ -41,5 +41,4 @@ def update(frame):
     line.set_ydata(u)
     return line,
 
-ani = animation.FuncAnimation(fig, update, frames=nt, interval=20, blit=True)
-plt.show()
+ani = animation.FuncAnimation(fig, update, frames=nt, 
